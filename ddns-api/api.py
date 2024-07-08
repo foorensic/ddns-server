@@ -122,7 +122,7 @@ class ResourceHandler(Resource):
             value = '"' + args.value.strip(' "') + '"'
 
         # Create the update file
-        file_content = 'server localhost\n'
+        file_content = 'server 127.0.0.1\n'
         file_content += 'zone %s\n' % ZONE
         for host in hosts:
             record_text = 'update delete {record!s} {record_type!s}\n'
