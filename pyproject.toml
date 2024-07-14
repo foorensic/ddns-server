@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ddns-server"
+version = "0.2.0"
+description = "Dynamic DNS Server"
+authors = ["foorensic"]
+license = "GPL-3.0"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+uvicorn = "^0.30.1"
+fastapi = "^0.111.0"
+pydantic = "^2.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

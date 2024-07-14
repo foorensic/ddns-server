@@ -1,3 +1,0 @@
-flask_restful
-Flask-HTTPAuth
-gunicorn
