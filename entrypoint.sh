@@ -68,4 +68,4 @@ chmod 644 /var/bind/*
 
 named -fg -4 -u named -c /etc/bind/named.conf &
 
-exec poetry run uvicorn --host 0.0.0.0 --port 5000 --no-server-header --proxy-headers api:app
+exec poetry run uvicorn --host 0.0.0.0 --port 5000 --no-server-header --proxy-headers --forwarded-allow-ips "*" api:app
